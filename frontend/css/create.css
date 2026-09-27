@@ -1,0 +1,256 @@
+.create-page {
+    min-height: calc(100vh - 70px);
+    padding: 50px 20px 80px;
+    background: #f7f4f1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.create-card {
+    width: 100%;
+    max-width: 620px;
+    background: #ffffff;
+    border: 1px solid #e8e1db;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(66, 52, 52, 0.08);
+}
+
+.create-card h1 {
+    margin: 0;
+    color: #423434;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.create-subtitle {
+    margin: 8px 0 30px;
+    color: #77706b;
+    font-size: 14px;
+}
+
+.create-field {
+    margin-bottom: 25px;
+}
+
+
+.create-field label {
+    display: block;
+    margin-bottom: 9px;
+    color: #423434;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.create-type-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.create-type-btn {
+    flex: 1;
+    padding: 12px 18px;
+    border: 1px solid #d8cec6;
+    border-radius: 10px;
+    background: #fcfaf7;
+    color: #5c514c;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.create-type-btn:hover {
+    border-color: #c9a58d;
+}
+
+
+.create-type-btn.active {
+    background: #c9a58d;
+    border-color: #c9a58d;
+    color: #ffffff;
+}
+
+#mediaInput {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8cec6;
+    border-radius: 10px;
+    background: #fcfaf7;
+    color: #5c514c;
+    font-size: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+#mediaInput:hover {
+    border-color: #c9a58d;
+}
+
+#captionInput {
+    width: 100%;
+    min-height: 120px;
+    padding: 13px;
+    border: 1px solid #d8cec6;
+    border-radius: 10px;
+    background: #fcfaf7;
+    color: #423434;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+#captionInput:focus {
+    border-color: #c9a58d;
+}
+
+
+#captionInput::placeholder {
+    color: #9a918b;
+}
+
+.create-preview {
+    width: 100%;
+    min-height: 260px;
+    margin-bottom: 25px;
+    border: 1px dashed #d8cec6;
+    border-radius: 14px;
+    background: #fcfaf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.create-preview p {
+    margin: 0;
+    color: #99908a;
+    font-size: 14px;
+}
+
+
+.create-preview img,
+.create-preview video {
+    display: block;
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.create-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+
+.cancel-create-btn,
+.publish-btn {
+    padding: 11px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.cancel-create-btn {
+    border: 1px solid #d8cec6;
+    background: #ffffff;
+    color: #5c514c;
+}
+
+
+.cancel-create-btn:hover {
+    background: #f5f1ee;
+}
+
+
+.publish-btn {
+    border: 1px solid #c9a58d;
+    background: #c9a58d;
+    color: #ffffff;
+}
+
+
+.publish-btn:hover {
+    background: #b89076;
+    border-color: #b89076;
+}
+
+.nav-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #c9a58d;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+
+.nav-profile {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+
+    .create-page {
+        padding: 30px 15px 100px;
+    }
+
+
+    .create-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+
+    .create-card h1 {
+        font-size: 26px;
+    }
+
+
+    .create-type-buttons {
+        flex-direction: column;
+    }
+
+
+    .create-type-btn {
+        width: 100%;
+    }
+
+
+    .create-preview {
+        min-height: 220px;
+    }
+
+
+    .create-actions {
+        width: 100%;
+    }
+
+
+    .cancel-create-btn,
+    .publish-btn {
+        flex: 1;
+    }
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create | MiniInsto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/create.css">
+
+</head>
+
+
+<body>
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">MiniInsto</a>
+
+
+            <nav class="user-nav">
+
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="explore.html?type=reels">Reels</a>
+                <a href="users.html">MiniInsto Users</a>
+                <a href="profile.html" class="nav-profile active">
+
+                    <span class="nav-avatar" id="navAvatar">U</span>
+                    <span>Profile</span>
+
+                </a>
+
+                <button class="logout-btn" id="logoutBtn" type="button">Logout</button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="create-page">
+
+
+        <section class="create-card">
+
+
+            <h1>Create</h1>
+
+
+            <p class="create-subtitle">Share a post or reel with MiniInsto.</p>
+
+            <div class="create-field">
+
+                <label>Content Type</label>
+                <div class="create-type-buttons">
+
+                    <button type="button" id="postTypeBtn" class="create-type-btn active">Photo Post</button>
+
+
+                    <button type="button" id="reelTypeBtn" class="create-type-btn">Reel</button>
+
+                </div>
+
+            </div>
+
+            <div class="create-field">
+
+                <label for="mediaInput">Choose Media</label>
+
+
+                <input type="file" id="mediaInput" accept="image/*">
+
+                <p id="selectedFileName" class="selected-file-name"></p>
+
+
+            </div>
+
+            <div class="create-field">
+
+                <label for="captionInput">Caption</label>
+
+
+                <textarea id="captionInput" rows="5" placeholder="Write a caption..."></textarea>
+
+            </div>
+
+            <div class="create-preview" id="createPreview">
+
+                <p>Media preview will appear here.</p>
+
+            </div>
+
+            <div class="create-actions">
+
+                <button type="button" class="cancel-create-btn" id="cancelCreateBtn">Cancel</button>
+                <button type="button" class="publish-btn" id="publishBtn">Publish</button>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/create.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+.login-main {
+    min-height: calc(100vh - 126px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #faf4ff,
+            #fff6fb
+        );
+}
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+
+    background: white;
+
+    padding: 38px;
+
+    border-radius: 25px;
+
+    border: 1px solid #eee0f5;
+
+    box-shadow:
+        0 15px 45px rgba(116, 59, 139, 0.10);
+}
+
+.login-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-heading span {
+    color: #a04dd0;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.login-heading h1 {
+    margin-top: 10px;
+
+    color: #35253d;
+
+    font-size: 29px;
+}
+
+.login-heading p {
+    margin-top: 9px;
+
+    color: #817486;
+
+    font-size: 14px;
+}
+
+.login-form-group {
+    margin-bottom: 19px;
+}
+
+.login-form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #4b3a52;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.login-form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ded0e5;
+
+    border-radius: 11px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    color: #3f3245;
+
+    background: #fff;
+}
+
+.login-form-group input:focus {
+    border-color: #a04dd0;
+
+    box-shadow:
+        0 0 0 3px rgba(160, 77, 208, 0.10);
+}
+
+.login-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e44d9,
+            #ed5ca8
+        );
+
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    opacity: 0.92;
+}
+
+.signup-text {
+    text-align: center;
+
+    margin-top: 23px;
+
+    color: #817486;
+
+    font-size: 13px;
+}
+
+.signup-text a {
+    color: #9145c5;
+    font-weight: 700;
+}
+
+
+@media (max-width: 500px) {
+
+    .login-card {
+        padding: 28px 21px;
+    }
+
+    .login-heading h1 {
+        font-size: 25px;
+    }
+
+}
